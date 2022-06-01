@@ -22,7 +22,7 @@ export class ButtonComponent implements OnInit {
   }
 
   addTask(){
-
+    //window.alert('Emmiting task');
     this.taskEmitOnButtonClick.emit();
 
   }
