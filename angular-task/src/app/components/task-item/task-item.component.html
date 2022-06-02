@@ -1,7 +1,7 @@
-<div class="task">
+<div class="task" [ngClass]="{reminder:incomingTask.reminder}" (dblclick)="onToggle(incomingTask)">
     <p>
         {{incomingTask.text}}
-        <fa-icon [icon]="faTimesIcon"></fa-icon>
+        <fa-icon [icon]="faTimesIcon" (click)="deleteTask(incomingTask)"></fa-icon>
     </p>
     <p>{{incomingTask.day}}</p>
 
